@@ -113,3 +113,47 @@ section ul li {
 .img-container img {
   object-fit: cover;
 }
+
+section ul li p:first-of-type {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+section ul li p:last-of-type {
+  font-size: 15px;
+  color: #555;
+}
+
+.contact-section {
+  background-color: var(--section-color);
+  color: white;
+  padding: 40px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: grid;
+  width: 50%;
+}
+
+
+label {
+  margin-top: 10px;
+}
+
+
+footer {
+  background-color: var(--header-footer-color);
+  text-align: center;
+  color: white;
+  height: 60px;
+  font-size: 14px;
+  padding: 1rem 0;
+}
+
