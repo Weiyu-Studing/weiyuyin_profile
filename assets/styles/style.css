@@ -1,0 +1,115 @@
+@import "./reset.css";
+
+:root {
+  --primary-color: rgb(37, 37, 37);
+  --header-footer-color: rgb(0, 0, 0);
+  --section-color: rgb(36, 34, 34);
+  --text-color: rgb(218, 218, 218);
+}
+
+.container {
+  max-width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+
+header {
+  background-color: var(--header-footer-color);
+  color: var(--text-color);
+  height: 6rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 6rem;
+}
+
+.header-container,
+.navigation-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navigation-links a {
+  color: rgb(198, 198, 198);
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation-links a:hover {
+  color: var(--text-color);
+}
+
+.hero-section {
+  background: url(../media/evgenit-night-5222267_1920.jpg) no-repeat center/cover;
+  height: 70rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.hero-container {
+  padding-inline: 10rem;
+}
+
+.hero-container h2 {
+  font-size: 5rem;
+}
+
+.hero-container p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.hero-container button {
+  margin-top: 2.5rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 5px;
+  color: var(--text-color);
+  width: 15rem;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  width: 20rem;
+}
+
+.about-section {
+  padding: 80px 10px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+section ul {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+}
+
+section ul li {
+  width: 200px;
+}
+
+.img-container {
+  border-radius: 10px;
+  width: 20rem;
+  height: 10rem;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #d8d8d8;
+}
+
+.img-container img {
+  object-fit: cover;
+}
