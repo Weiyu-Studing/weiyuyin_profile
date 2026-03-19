@@ -157,3 +157,9 @@ footer {
   padding: 1rem 0;
 }
 
+@media (max-width: 768px) {
+  section ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
